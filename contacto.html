@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de contacto</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 
 
@@ -71,12 +78,37 @@
 
     <!-- Acá cambia el contenido según la página -->
 
+<div class="mb-4 bg-light p-4 rounded shadow "> 
+ 
+    <h1 class="text-center mb-4">¿Deseas recibir novedades e información?</h1>
+    <p class="lead text-center">Completa los siguientes datos para recibir nuestro newsletter:</p>
 
-    <h1 class="text-center mb-4">Ponte en contacto</h1>
-    <p class="lead text-center">Aquí irá el formulario</p>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Tu nombre y apellido</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+</div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">No soy un cyborg</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar mis datos</button>
+</form>
+
+
+</div>
+
   </main>
 
 
+  <!-- Footer -->
+  <footer class="bg-info text-dark text-center p-3 mt-5">
+    <p id="footer"> 2025 Proyecto TP2 - Natalia Morello</p>
+  </footer>
 
 
    <!-- BOOTSTRAP JS -->

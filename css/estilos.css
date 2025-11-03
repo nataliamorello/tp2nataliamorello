@@ -1,9 +1,150 @@
 
 
+/* ---------- Grales ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Pixelify Sans, sans-serif;
+}
+
+p {
+    font-family: 'Funnel Sans', sans-serif;
+    color: #9a30a6;
+  
+}
+
+body {
+    background-color: #010e3c;
+}
+
+/* ---------- imgs del carrousel ---------- */
 
 .carousel-item img {
 
     object-fit: cover;
     height: 35rem;
 
+}
+
+/* ---------- img de módulo en home ---------- */
+#glitch {
+ object-fit: cover;
+    height: 20rem;
+
+}
+
+
+
+
+/* ---------- Estilos para footer ---------- */
+
+#footer {
+  font-family: pixelify sans, sans-serif;
+    color: #000000;
+}
+
+
+
+
+
+/* ---------- Galería grid ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  padding: 0 0.5rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/*Cuando pasás el mouse encima, la imagen aumenta un poco de tamaño y aparece una sombra suave.*/
+
+.galeria img:hover,
+.galeria img:focus {
+  transform: scale(1.03);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+  outline: none;
+}
+
+/* ---------- elemento Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0; /* top:0; left:0; right:0; bottom:0; */
+  display: none;
+  background: rgba(0,0,0,0.88);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  animation: lightboxFade .25s ease forwards;
+}
+
+.lightbox[aria-hidden="false"] {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92%;
+  max-height: 72vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  animation: lightboxZoom .3s ease;
+}
+
+.lightbox-frase {
+  color: #fff;
+  text-align: center;
+  max-width: 90%;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  line-height: 1;
+  transition: transform .15s ease;
+}
+.lightbox-close:hover { transform: scale(1.05); color: #ffd54d; }
+
+/* Prevent body scroll when open */
+body.lightbox-open {
+  overflow: hidden;
+}
+
+/* animaciones al clickear las imgs */
+@keyframes lightboxFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes lightboxZoom {
+  from { transform: scale(.98); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+  .lightbox img { max-height: 60vh; }
+  .lightbox-frase { font-size: 0.95rem; padding: 0 1rem; }
 }

@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galería</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 
 
@@ -67,73 +74,101 @@
 
 
   <!-- Introducción -->
-        <div class="row p-3 d-flex justify-content-center text-center bg-dark text-white">
-            <div class="col-6">Una introducción al ciberfeminismo</div>
-        </div>
+  <main class="container">
+
+ <!-- Galería -->
+ <div class="container my-5 bg-light p-4 rounded">
+    <h1 class="text-center mb-4 ">Galería de Imágenes</h1>
+ <section class="galeria col-10 col-md-3 col-lg-6 container-fluid" aria-label="Galería de imágenes">
+      <img src="img/img3.jpg" alt="Obra 1 — frase 1" data-frase="Donna Haraway" tabindex="0">
+      <img src="img/img2.jpg" alt="Obra 2 — frase 2" data-frase="Manifiesto de VNS Matrix" tabindex="0">
+      <img src="img/img1.jpg" alt="Obra 3 — frase 3" data-frase="Expresiones artísticas del concepto de cyborg" tabindex="0">
+      <img src="img/img4.jpg" alt="Obra 4 — frase 4" data-frase="Imagen de obra digital de VNS Matrix" tabindex="0">
+      <img src="img/img5.jpg" alt="Obra 5 — frase 5" data-frase="Imagen de All New Gen, una obra digital de VNS Matrix" tabindex="0">
+      <img src="img/img6.jpg" alt="Obra 6 — frase 6" data-frase="Colectivo VNS Matrix" tabindex="0">
+ 
+    </section>
+
+
+  <!-- Modal para imagen ampliada -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-frase" class="lightbox-frase"></p>
+</div>
 
 
 
   <!-- Contenido -->
 <div class="container text-center">
+
+<h2 class="p-5">Galería de links y frases</h2>
+
   <div class="row justify-content-start">
     <div class="col-4">
-      One of two columns
-    </div>
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
+    </div>  
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
     </div>
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
   </div>
   <div class="row justify-content-end">
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
     </div>
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
   </div>
   <div class="row justify-content-around">
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
     </div>
   </div>
   <div class="row justify-content-between">
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
     </div>
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
   </div>
   <div class="row justify-content-evenly">
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark btn-lg">Dark</button>
     </div>
     <div class="col-4">
-      One of two columns
+      <button type="button" class="btn btn-dark">Dark</button>
     </div>
   </div>
 </div>
 
 
+</div>
+
+</main>
 
 
-
+  <!-- Footer -->
+  <footer class="bg-info text-dark text-center p-3 mt-5">
+    <p id="footer"> 2025 Proyecto TP2 - Natalia Morello</p>
+  </footer>
 
    <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    <!-- ARCHIVO JS -->
-  <script src="js/main.js"></script>
+  <script src="js/galeria.js"></script>
 
 
 </body>
