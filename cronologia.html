@@ -63,8 +63,7 @@
 
           <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
           <li class="nav-item"><a class="nav-link" href="cronologia.html">Cronología</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
         </ul>
       </div>
     </div>
@@ -77,27 +76,59 @@
   <!-- CONTENIDO -->
 
 
-  <main class="container py-5 bg-light rounded-3 p-5">
 
+
+     <main class="container p-5">
+ <div class="container py-5 bg-light rounded-3 p-5">
 
     <!-- Acá cambia el contenido según la página -->
 
 
     <h1 class="text-center mb-4">Cronología</h1>
-    <p class="lead text-center">Línea de tiempo</p>
+   
+<!-- GRID DE HITOS -->
+    <div class="cronologia-container mt-4">
+      <div class="hito card-crono" data-color="#ffb6c1" role="button" tabindex="0" aria-pressed="false">
+        <h3>1985</h3>
+        <p>Donna Haraway publica textos que originan el “Manifiesto Cyborg”.</p>
+      </div>
+
+      <div class="hito card-crono" data-color="#b6d7a8" role="button" tabindex="0" aria-pressed="false">
+        <h3>1991</h3>
+        <p>VNS Matrix y el Cyberfeminist Manifesto comienzan a circular en la red.</p>
+      </div>
+
+      <div class="hito card-crono" data-color="#a2c4c9" role="button" tabindex="0" aria-pressed="false">
+        <h3>1993</h3>
+        <p>Primeras piezas y performances ciberfeministas en festivales digitales.</p>
+      </div>
+
+      <div class="hito card-crono" data-color="#c9b6ff" role="button" tabindex="0" aria-pressed="false">
+        <h3>2000–2020</h3>
+        <p>Relecturas y resignificaciones: influencia en arte post-internet y net-art feminista.</p>
+      </div>
+    </div>
+
+</div>
   </main>
 
 
 
   <!-- Footer -->
-  <footer class="bg-info text-dark text-center p-3 mt-5">
-    <p id="footer"> 2025 Proyecto TP2 - Natalia Morello</p>
-  </footer>
+<footer class="bg-info text-dark text-center p-3 mt-5">
+  <p id="footer" class="mb-2">2025 Proyecto TP2 - Natalia Morello</p>
+
+  <div class="d-flex justify-content-center gap-3">
+    <a href="contacto.html" class="text-dark text-decoration-none">Contacto</a>
+    <a href="about.html" class="text-dark text-decoration-none">About</a>
+  </div>
+</footer>
+
 
    <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    <!-- ARCHIVO JS -->
-  <script src="js/main.js"></script>
+  <script src="js/cronologia.js"></script>
 
 
 </body>

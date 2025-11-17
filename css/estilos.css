@@ -27,6 +27,8 @@ body {
 
 }
 
+
+
 /* ---------- img de módulo en home ---------- */
 #glitch {
  object-fit: cover;
@@ -128,7 +130,7 @@ body {
 }
 .lightbox-close:hover { transform: scale(1.05); color: #ffd54d; }
 
-/* Prevent body scroll when open */
+/* prevenir que scrolee la pagina cuando se abre el modal con la img */
 body.lightbox-open {
   overflow: hidden;
 }
@@ -147,4 +149,63 @@ body.lightbox-open {
 @media (max-width: 576px) {
   .lightbox img { max-height: 60vh; }
   .lightbox-frase { font-size: 0.95rem; padding: 0 1rem; }
+}
+
+
+
+
+
+/* -------cronologia.html-------- */
+
+/* ---------- Cronología ---------- */
+.cronologia-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.hito {
+  background-color: #f8f9fa; /* fondo por defecto */
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  min-height: 120px;
+}
+
+.hito:hover,
+.hito:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  outline: none;
+}
+
+.hito h3 {
+  color: #3a0066;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.hito p {
+  color: #333;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+/* Clase que activa el color (se aplica con JS) */
+.card-crono.activa {
+  color: #111; /* texto oscuro cuando está activa */
+}
+
+
+/* ---------formulario -------- clases para mostrar errores*/
+
+/* selector de clase para resaltar campos con error */
+.error-input {
+    border: 2px solid red; 
+
+    background-color: #ffe0e0; 
 }
