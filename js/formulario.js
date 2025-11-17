@@ -7,13 +7,11 @@ const checkCyborg = document.querySelector('#checkCyborg');
 
 
 
-
 //captura elementos de error
 
 const errorEmail = document.querySelector('#error-email');
 const errorNombre = document.querySelector('#error-nombre');
 const errorCyborg = document.querySelector('#error-cyborg');
-
 
 
 
